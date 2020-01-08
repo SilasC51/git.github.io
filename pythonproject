@@ -1,0 +1,69 @@
+import turtle
+
+# Turtle Set up
+crush = turtle.Turtle()
+crush.speed(10)
+
+# Window set up
+window = turtle.Screen()
+window.bgcolor("light blue")
+window.screensize(2000, 1500)
+
+
+def o16():
+    for i in range(4):
+        crush.forward(100)
+        crush.left(90)
+        crush.forward(40)
+        crush.left(90)
+        crush.forward(100)
+        crush.left(90)
+        crush.forward(40)
+        crush.left(0)
+    o17()
+
+
+def o17():
+    crush.penup()
+    crush.setpos(0, 150)
+    crush.pendown()
+    for i in range(6):
+        crush.forward(40)
+        crush.right(120)
+        crush.forward(40)
+        crush.right(120)
+        crush.forward(40)
+        crush.left(300)
+    o18()
+
+
+def o18():
+    crush.penup()
+    crush.setpos(200, 200)
+    crush.pendown()
+    for i in range(4):
+        crush.forward(60)
+        crush.left(90)
+        crush.forward(10)
+        crush.left(90)
+        crush.forward(70)
+        crush.left(90)
+        crush.forward(70)
+        crush.left(90)
+        crush.forward(70)
+        crush.left(90)
+        crush.forward(10)
+        crush.left(90)
+        crush.forward(60)
+        crush.right(90)
+        crush.forward(50)
+        crush.penup()
+        crush.setpos(190, 210)
+        crush.left(90)
+        crush.pendown()
+
+
+
+o16()
+# Keeps window open
+window.mainloop()
